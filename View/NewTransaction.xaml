@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAB09_MAUI_DataBindingLab.View.NewTransaction"
+             xmlns:local="using:LAB09_MAUI_DataBindingLab.View"
+             xmlns:m="clr-namespace:LAB09_MAUI_DataBindingLab.Model"                   
+             >
+    <ContentView.Resources>
+        <Style TargetType="Picker">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="WhiteSmoke" />
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="WhiteSmoke" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="WhiteSmoke" />
+        </Style>
+    </ContentView.Resources>
+
+    <StackLayout Background="Gray" Padding="5">
+        <Label Text="Category:"/>
+        <Picker TextColor="WhiteSmoke" />
+        <Label Text="Description:"/>
+        <Entry Text="???"/>
+        <Label Text="Value:"/>
+        <Entry Text="???"/>
+        <Button Text="Add transaction" TextColor="LightGray" Clicked="AddTransactionClicked"/>
+    </StackLayout>
+</ContentView>
